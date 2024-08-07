@@ -1,0 +1,9 @@
+<div class="product">
+    <img src="product.pictureURL" alt="">
+    <div>{{product.group}}</div>
+    <div class="name">{{product.name}}</div>
+    <div>تنها <span>{{product.stockCount}}</span> عدد در انبار باقی مانده است</div>
+    @if (product.starCount && product.starCount != 0) {<span>{{product.starCount}}⭐</span>}
+    <div><span>{{product.price | number}}</span> تومان</div>
+    <button (click)="onMore.emit(product)">بیشتر</button>
+</div>

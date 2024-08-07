@@ -1,0 +1,5 @@
+<div class="products">
+    @for (item of products; track $index) {
+        <product (onMore)="select($event)" [product]="item"/>
+    }
+</div>
